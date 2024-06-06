@@ -1,0 +1,13 @@
+:root{
+    --corPrimaria : #22110a;
+    --corSecundaria : #712e09;
+    --corTercearia : #fff4e4;
+    --corBranco: #ffffff;
+    --corPreto: black;
+    --corLaranja: #fd7e14;
+}
+
+.active{
+    border-bottom: var(--corBranco) 2px solid;
+}
+
