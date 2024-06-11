@@ -1,6 +1,6 @@
 :root{
     --corPrimaria : black;
-    --corSecundaria : #712e09;
+    --corSecundaria : grey;
     --corTercearia : #fff4e4;
     --corBranco: #ffffff;
     --corPreto: black;
@@ -37,4 +37,14 @@ body{
     height: 25px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#tela{
+    width: 180px;
+    height: 30px;
+    background-color: var(--corSecundaria);
+    border: var(--corPreto) 1px solid;
+    color: var(--corBranco);
+    display: flex;
+    justify-content: center;
 }
