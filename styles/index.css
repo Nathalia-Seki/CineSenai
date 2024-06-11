@@ -1,5 +1,5 @@
 :root{
-    --corPrimaria : #22110a;
+    --corPrimaria : black;
     --corSecundaria : #712e09;
     --corTercearia : #fff4e4;
     --corBranco: #ffffff;
@@ -13,4 +13,13 @@
 
 #teste1{
     height: 530px;
+}
+
+body{
+    background-color: var(--corPrimaria);
+    color: var(--corBranco);
+}
+
+#grupoFilmesEmCartaz{
+    flex-direction: column !important; 
 }
