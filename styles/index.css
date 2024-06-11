@@ -23,3 +23,18 @@ body{
 #grupoFilmesEmCartaz{
     flex-direction: column !important; 
 }
+
+#poltronas{
+    background-image: url(../images/Icons/pessoa.svg);
+}
+
+#precoIngresso{
+    background-image: url(../images/Icons/preço.svg);   
+}
+
+#poltronas , #precoIngresso{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
