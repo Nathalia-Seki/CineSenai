@@ -32,5 +32,13 @@ filmesPage.forEach((elemento) => {
     `
 })
 
+// seleção
+$("#btn01").on("click",function(){
+    if( $("#btn01").attr("class") == "bg-trasnparent"){
+        $("#btn01").attr("class","bg-success");
+    }else{
+        $("#btn01").attr("class","bg-trasnparent");
+    }
+})
 
 
