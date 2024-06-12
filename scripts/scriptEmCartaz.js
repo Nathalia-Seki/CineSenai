@@ -33,12 +33,34 @@ filmesPage.forEach((elemento) => {
 })
 
 // seleção
-$("#btn01").on("click",function(){
-    if( $("#btn01").attr("class") == "bg-trasnparent"){
-        $("#btn01").attr("class","bg-success");
+// $("#btn01").on("click",function(){
+//     if( $("#btn01").attr("class") == "bg-trasnparent"){
+//         $("#btn01").attr("class","bg-success");
+//     }else{
+//         $("#btn01").attr("class","bg-trasnparent");
+//     }
+// })
+
+
+
+var numeroPoltronas = 6
+
+for(let i = 0; i < numeroPoltronas; i++){
+    document.querySelector("#grupoPoltronas1").innerHTML += `
+    <button type="button" onclick="trocaCor('btnImg${i}')" id="btn0${i}" class="btnPoltrona border-0 bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" id="btnImg${i}" width="30" height="30" fill="black" class="bi bi-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"/>
+                      </svg>
+    </button>
+`
+
+}
+
+function trocaCor(id){
+
+    if( $(`#${id}`).attr("fill") == "black"){
+        
+        $(`#${id}`).attr("fill","red");
     }else{
-        $("#btn01").attr("class","bg-trasnparent");
+        $(`#${id}`).attr("fill","black");
     }
-})
-
-
+}
